@@ -1,19 +1,28 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-.text13_lG { font-size: 1rem; color: #eeeeee; }
+p { margin: 0; padding: 0; }
 
-.text13_G { font-size: 1rem; color: #636363; }
+.text_cent { text-align: center; }
 
-.text14_G { font-size: 1.1rem; color: #636363; }
+.text13_lG { font-size: 1em; color: #eeeeee; }
 
-.text16_w { font-size: 1.2rem; color: white; }
+.text13_G { font-size: 1em; color: #8a8a8a; }
 
-.text16_G { font-size: 1.2rem; color: #636363; }
+.text14_G { font-size: 1.1em; color: #636363; }
 
-.text16_dG { font-size: 1.2rem; color: #222222; }
+.text14_mG { font-size: 1em; color: #636363; }
 
-.text18_dG { font-size: 1.5rem; color: #222222; }
+.text16_w { font-size: 1.2em; color: white; }
 
-.bold_text18_b { font-size: 1.5rem; color: #4497ff; font-weight: 600; }
+.text16_mG { font-size: 1.2em; color: #636363; }
 
-.bold_text24_b { font-size: 2rem; color: #4497ff; font-weight: 600; }
+.text16_mG_title { font-size: 1.2em; color: #636363; line-height: 32px; }
+.text16_mG_title:before { display: inline-block; content: attr(title); }
+
+.text16_dG { font-size: 1.2em; color: #222222; }
+
+.text18_dG { font-size: 1.5em; color: #222222; }
+
+.bold_text18_b { font-size: 1.5em; color: #4497ff; font-weight: 600; }
+
+.bold_text24_b { font-size: 2em; color: #4497ff; font-weight: 600; }

@@ -4,51 +4,73 @@ $color_chief: rgba(68, 151, 255, 1.00); // 主要色調・亮藍色 b
 $color_money: rgba(255, 0, 0, 1.00); // 價格顯示・紅色 r
 $color_gray: rgba(238, 238, 238, 1.00); // 背景顏色・淺灰色 lG
 $color_text: rgba(34, 34, 34, 1.00); // 文字顯示・深灰色 dG
-$color_text2: rgba(99, 99, 99, 1.00); // 文字顯示・灰色 G
+$color_text2: rgba(99, 99, 99, 1.00); // 文字顯示・中灰色 mG
+$color_text3: rgba(138, 138, 138, 1.00);  // 文字顯示・灰色 G
 
+p {
+  margin: 0;
+  padding: 0;
+}
+.text_cent {
+  text-align: center;
+}
 
 .text13_lG {
-  font-size: 1rem;
+  font-size: 1em;
   color: $color_gray;
 }
 .text13_G {
-  font-size: 1rem;
-  color: $color_text2;
+  font-size: 1em;
+  color: $color_text3;
 }
 
 
 
 .text14_G {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   color: $color_text2;
 }
 
+.text14_mG {
+  font-size: 1em;
+  color: $color_text2;
+}
 
 
 .text16_w {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: white;
 }
 
-.text16_G {
-  font-size: 1.2rem;
+.text16_mG {
+  font-size: 1.2em;
   color: $color_text2;
 }
 
+.text16_mG_title {
+  font-size: 1.2em;
+  color: $color_text2;
+  line-height: 32px;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+  }
+}
+
 .text16_dG {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: $color_text;
 }
 
 
-
 .text18_dG {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: $color_text;
 }
 
 .bold_text18_b {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: $color_chief;
   font-weight: 600;
 }
@@ -56,7 +78,10 @@ $color_text2: rgba(99, 99, 99, 1.00); // 文字顯示・灰色 G
 
 
 .bold_text24_b {
-  font-size: 2rem;
+  font-size: 2em;
   color: $color_chief;
   font-weight: 600;
 }
+
+
+

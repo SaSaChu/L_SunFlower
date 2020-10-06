@@ -1,0 +1,44 @@
+@import "Ginkgo";
+
+$color_chief: rgba(68, 151, 255, 1.00); // 主要色調・亮藍色 b
+$color_money: rgba(255, 0, 0, 1.00); // 價格顯示・紅色 r
+$color_gray: rgba(238, 238, 238, 1.00); // 背景顏色・淺灰色 lG
+$color_text: rgba(34, 34, 34, 1.00); // 文字顯示・深灰色 dG
+$color_text2: rgba(99, 99, 99, 1.00); // 文字顯示・中灰色 mG
+$color_text3: rgba(138, 138, 138, 1.00);  // 文字顯示・灰色 G
+
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+}
+
+.a100 {
+  width: 100%;
+}
+
+.info_type {
+  display: inline-block;
+  width: 100%;
+  color: $color_chief;
+  font-weight: 500;
+  font-size: 1.4em;
+
+  &:after {
+    display: inline-block;
+    content: attr(title);
+    width: 100%;
+    color: $color_text2;
+    padding-top: 3px;
+    font-size: .8em;
+    font-weight: 400;
+  }
+}
+
