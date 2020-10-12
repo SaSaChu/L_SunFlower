@@ -1,8 +1,14 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.box_ds { display: inline-block; }
+
+.box_ds100 { display: inline-block; width: 100%; }
+
 .box_cent { margin: 0 auto; }
 
 .l_height45 { line-height: 45px; }
+
+.l_height45 { line-height: 2.5rem; }
 
 .order_left { float: left; }
 
@@ -10,8 +16,14 @@
 
 .pTD15 { padding: 15px 0; }
 
+.pTD10 { padding: 10px 0; }
+
 .pLR15 { padding: 0 15px; }
 
 .p15 { padding: 15px 15px; }
 
 .pT10 { padding-top: 10px; }
+
+.pT30 { padding-top: 30px; }
+
+.mT10 { margin-top: 10px; }

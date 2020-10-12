@@ -29,7 +29,11 @@ button {
   width: 100%;
   color: $color_chief;
   font-weight: 500;
-  font-size: 1.4em;
+  font-size: 1.4rem;
+
+  &.info_icon {
+    font-size: 2rem
+  }
 
   &:after {
     display: inline-block;
@@ -37,8 +41,27 @@ button {
     width: 100%;
     color: $color_text2;
     padding-top: 3px;
-    font-size: .8em;
+    font-size: .8rem;
     font-weight: 400;
   }
 }
+
+.list_boxs {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid $color_gray;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  color: $color_text;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &:hover, &:active {
+    color: $color_chief;
+  }
+}
+
+
 

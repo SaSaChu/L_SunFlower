@@ -1,12 +1,24 @@
 @import "Ginkgo";
 
+.box_ds {
+  display: inline-block;
+}
+
+.box_ds100 {
+  display: inline-block;
+  width: 100%;
+}
+
 .box_cent {
   margin: 0 auto;
 }
 
-
 .l_height45 {
   line-height: 45px;
+}
+
+.l_height45 {
+  line-height: 2.5rem;
 }
 
 .order_left {
@@ -21,6 +33,10 @@
   padding: 15px 0;
 }
 
+.pTD10 {
+  padding: 10px 0;
+}
+
 .pLR15 {
   padding: 0 15px;
 }
@@ -32,3 +48,14 @@
 .pT10 {
   padding-top: 10px;
 }
+
+.pT30 {
+  padding-top: 30px;
+}
+
+.mT10 {
+  margin-top: 10px;
+}
+
+
+

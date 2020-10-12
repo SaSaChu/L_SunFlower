@@ -6,5 +6,10 @@ button { display: inline-block; cursor: pointer; outline: 0; }
 
 .a100 { width: 100%; }
 
-.info_type { display: inline-block; width: 100%; color: #4497ff; font-weight: 500; font-size: 1.4em; }
-.info_type:after { display: inline-block; content: attr(title); width: 100%; color: #636363; padding-top: 3px; font-size: .8em; font-weight: 400; }
+.info_type { display: inline-block; width: 100%; color: #4497ff; font-weight: 500; font-size: 1.4rem; }
+.info_type.info_icon { font-size: 2rem; }
+.info_type:after { display: inline-block; content: attr(title); width: 100%; color: #636363; padding-top: 3px; font-size: .8rem; font-weight: 400; }
+
+.list_boxs { display: inline-block; width: 100%; border-bottom: 1px solid #eeeeee; padding: 10px 15px; font-size: 1.1rem; color: #222222; }
+.list_boxs:last-child { border-bottom: 0; }
+.list_boxs:hover, .list_boxs:active { color: #4497ff; }
