@@ -6,9 +6,9 @@
 
 .box_cent { margin: 0 auto; }
 
-.l_height45 { line-height: 45px; }
+.l_height35 { line-height: 2.5rem; }
 
-.l_height45 { line-height: 2.5rem; }
+.l_height45 { line-height: 3.5rem; }
 
 .order_left { float: left; }
 
@@ -23,6 +23,8 @@
 .p15 { padding: 15px 15px; }
 
 .pT10 { padding-top: 10px; }
+
+.pD10 { padding-bottom: 10px; }
 
 .pT30 { padding-top: 30px; }
 

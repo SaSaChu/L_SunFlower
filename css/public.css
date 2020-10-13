@@ -9,6 +9,7 @@ header .title_boxs { display: inline-block; width: calc(100% - 20px * 2); }
 
 .boxs { display: inline-block; width: 100%; position: relative; }
 .boxs img { display: inline-block; width: 100%; }
+.boxs.boxs50 { width: 50%; }
 .boxs .logo_box { position: absolute; z-index: 9999; top: 0; left: 0; display: inline-block; width: 100%; height: 420px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs .logo_box { height: 210px; } }
 .boxs .logo_box img { display: inline-block; width: 100%; }
@@ -20,3 +21,17 @@ header .title_boxs { display: inline-block; width: calc(100% - 20px * 2); }
 .gr_box .info_boxs.info_boxs2 { width: calc(100% / 2); }
 .gr_box .info_boxs:last-child { border-right: 0; }
 .gr_box.wr_box { background-color: transparent; }
+
+.buttombox { display: inline-block; width: 100%; }
+.buttombox .ba { display: inline-block; cursor: pointer; width: calc(49% - 6px * 2 / 3); height: 3rem; background-color: #eeeeee; font-size: 1.2rem; text-align: center; line-height: 3rem; color: rgba(138, 138, 138, 0.8); }
+.buttombox .ba:first-child { margin-left: 0; margin-right: 6px; float: left; }
+.buttombox .ba:last-child { margin-left: 6px; margin-right: 0; float: right; }
+.buttombox .ba:hover, .buttombox .ba.h { color: #4497ff; border-bottom: 3px solid #4497ff; }
+
+.centbox { display: inline-block; width: 100%; }
+.centbox .partnersbox { display: inline-block; width: 100%; display: none; }
+.centbox .partnersbox.partnershow { display: inline-block; }
+.centbox .partnersbox .pal { display: inline-block; width: 100%; padding: 15px; border-bottom: 1px solid #eeeeee; }
+
+.se_boxs { display: inline-block; width: 100%; padding: 15px; background-color: #eeeeee; }
+.se_boxs .se_box { display: inline-block; width: 100%; border: 0; outline: 0; background-color: #eeeeee; font-size: 1.2rem; color: #636363; }

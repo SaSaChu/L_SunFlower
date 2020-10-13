@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  position: relative;
+  position: relative;  
 
   display: inline-block;
   width: 100%;
@@ -48,6 +48,10 @@ header {
   img {
     display: inline-block;
     width: 100%;
+  }
+
+  &.boxs50 {
+    width: 50%;
   }
 
   .logo_box {
@@ -100,6 +104,87 @@ header {
     background-color: transparent;
   }
 }
+
+.buttombox {
+  display: inline-block;
+  width: 100%;
+
+  .ba {
+    display: inline-block;
+    cursor: pointer;
+
+    width: calc(49% - 6px * 2 / 3);
+    height: 3rem;
+    background-color: $color_gray;
+
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    color: rgba(138, 138, 138, .8);
+
+    &:first-child {
+      margin-left: 0;
+      margin-right: 6px;
+      float: left;
+    }
+
+    &:last-child {
+      margin-left: 6px;
+      margin-right: 0;
+      float: right;
+    }
+
+    &:hover, &.h {
+      color: $color_chief;
+      border-bottom: 3px solid $color_chief;
+    }
+  }
+}
+
+.centbox {
+  display: inline-block;
+  width: 100%;
+
+  // partners
+  .partnersbox {
+    display: inline-block;
+    width: 100%;
+
+    // 控制按鈕分頁，設定預設值是沒有顯示
+    display: none;
+
+    &.partnershow {
+      display: inline-block;
+    }
+
+    .pal {
+      display: inline-block;
+      width: 100%;
+      padding: 15px;
+      border-bottom: 1px solid $color_gray;
+    }
+  }
+}
+
+.se_boxs {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(238, 238, 238, 1.00);
+
+  .se_box {
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: rgba(238, 238, 238, 1.00);
+    font-size: 1.2rem;
+    color: $color_text2;
+  }
+}
+
+
+
 
 
 

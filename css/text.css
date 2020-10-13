@@ -8,6 +8,8 @@ p { margin: 0; padding: 0; }
 
 .text10_G { font-size: .8rem; color: #8a8a8a; }
 
+.icon_qu { display: inline-block; font-size: 1.3rem; margin-left: 10px; color: #f1bf4d; margin-top: -1px; }
+
 .text13_lG { font-size: 1rem; color: #eeeeee; }
 
 .text13_G { font-size: 1rem; color: #8a8a8a; }
@@ -24,6 +26,9 @@ p { margin: 0; padding: 0; }
 .text16_mG_title.no_lh32 { line-height: normal; }
 .text16_mG_title:before { display: inline-block; content: attr(title); }
 
+.text16_lG_title { font-size: 1.2rem; color: #8a8a8a; line-height: 32px; }
+.text16_lG_title:before { display: inline-block; content: attr(title); }
+
 .text16_dG { font-size: 1.2rem; color: #222222; }
 
 .text18_dG { font-size: 1.5rem; color: #222222; }
@@ -37,3 +42,5 @@ p { margin: 0; padding: 0; }
 
 .point_type { display: inline-block; float: right; color: #4497ff; font-weight: 500; font-size: 1.4rem; }
 .point_type:after { display: inline-block; content: attr(title); font-size: .8rem; font-weight: 500; color: #636363; margin-left: 5px; }
+.point_type.point_mark_add:before { display: inline-block; content: '+'; margin-right: 5px; }
+.point_type.point_mark_de:before { display: inline-block; content: '-'; margin-right: 5px; }

@@ -26,6 +26,13 @@ p {
   color: $color_text3;
 }
 
+.icon_qu {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-left:10px;
+  color:rgba(241, 191, 77, 1.00);
+  margin-top: -1px;
+}
 
 
 .text13_lG {
@@ -68,6 +75,17 @@ p {
   &.no_lh32 {
     line-height: normal;
   }
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+  }
+}
+
+.text16_lG_title {
+  font-size: 1.2rem;
+  color: $color_text3;
+  line-height: 32px;
 
   &:before {
     display: inline-block;
@@ -132,6 +150,22 @@ p {
     font-weight: 500;
     color: $color_text2;
     margin-left: 5px;
+  }
+
+  &.point_mark_add {
+    &:before {
+      display: inline-block;
+      content: '+';
+      margin-right: 5px;
+    }
+  }
+
+  &.point_mark_de {
+    &:before {
+      display: inline-block;
+      content: '-';
+      margin-right: 5px;
+    }
   }
 }
 
