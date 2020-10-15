@@ -20,12 +20,20 @@
 
 .pLR15 { padding: 0 15px; }
 
+.pL20 { padding-left: 20px; }
+
 .p15 { padding: 15px 15px; }
 
 .pT10 { padding-top: 10px; }
+
+.pT5 { padding-top: 5px; }
 
 .pD10 { padding-bottom: 10px; }
 
 .pT30 { padding-top: 30px; }
 
 .mT10 { margin-top: 10px; }
+
+.mTD10 { margin: 10px 0; }
+
+.mTD20 { margin: 20px 0; }

@@ -40,6 +40,25 @@ header {
 
 }
 
+.box30 {
+  display: inline-block;
+  width: 30%;
+  float: left;
+}
+
+.box70 {
+  display: inline-block;
+  width: 70%;
+  float: left;
+}
+
+.boxs_pos50 {
+  display: inline-block;
+  width: 50%;
+  height: 3.5rem;
+  position: relative;
+}
+
 .boxs {
   display: inline-block;
   width: 100%;
@@ -166,11 +185,23 @@ header {
   }
 }
 
+.ce_box {
+  display: inline-block;
+  width: 100%;
+  background-color: $color_gray;
+  padding: 10px;
+}
+
 .se_boxs {
   display: inline-block;
   width: 100%;
   padding: 15px;
   background-color: rgba(238, 238, 238, 1.00);
+
+  &.no_bg {
+    background-color: transparent;
+    padding: 10px 0;
+  }
 
   .se_box {
     display: inline-block;
@@ -180,11 +211,30 @@ header {
     background-color: rgba(238, 238, 238, 1.00);
     font-size: 1.2rem;
     color: $color_text2;
+
+    &.no_bg2 {
+      background-color: transparent;
+    }
   }
 }
 
+.list_boxs {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid $color_gray;
+  padding: 10px 15px;
 
+  &:last-child {
+    border-bottom: 0;
+  }
+}
 
+.qr_box {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid $color_gray;
+  padding: 45px;
+}
 
 
 

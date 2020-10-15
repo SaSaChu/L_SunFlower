@@ -20,6 +20,10 @@ p {
   text-align: right;
 }
 
+.lH25 {
+  line-height: 25px !important;
+}
+
 
 .text10_G {
   font-size: .8rem;
@@ -42,6 +46,13 @@ p {
 .text13_G {
   font-size: 1rem;
   color: $color_text3;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    color: $color_money;
+    margin-right: 5px;
+  }
 }
 
 
@@ -54,6 +65,34 @@ p {
 .text14_mG {
   font-size: 1rem;
   color: $color_text2;
+}
+
+.text14_dG {
+  font-size: 1.1rem;
+  color: $color_text;
+}
+
+.text14_R {
+  font-size: 1.1rem;
+  color: $color_money;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    margin-right: 5px;
+  }
+}
+
+.qua14_dG {
+  font-size: 1.1rem;
+  color: $color_text;
+  margin-right: 10px;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    margin-right: 5px;
+  }
 }
 
 
@@ -71,6 +110,10 @@ p {
   font-size: 1.2rem;
   color: $color_text2;
   line-height: 32px;
+
+  &.title_blue16 {
+    color: $color_chief;
+  }
 
   &.no_lh32 {
     line-height: normal;

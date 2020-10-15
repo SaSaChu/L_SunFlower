@@ -10,6 +10,9 @@ button { display: inline-block; cursor: pointer; outline: 0; }
 .info_type.info_icon { font-size: 2rem; }
 .info_type:after { display: inline-block; content: attr(title); width: 100%; color: #636363; padding-top: 3px; font-size: .8rem; font-weight: 400; }
 
-.list_boxs { display: inline-block; width: 100%; border-bottom: 1px solid #eeeeee; padding: 10px 15px; font-size: 1.1rem; color: #222222; }
-.list_boxs:last-child { border-bottom: 0; }
-.list_boxs:hover, .list_boxs:active { color: #4497ff; }
+.link_type01 { display: inline-block; width: 100%; font-size: 1.1rem; color: #222222; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.link_type01:hover, .link_type01:active { color: #4497ff; }
+
+.order_money { color: red; font-size: 1.3rem; font-weight: 900; position: absolute; right: 0; bottom: 0; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.order_money:before { display: inline-block; content: attr(title); color: red; font-size: 1.3rem; font-weight: 900; margin-right: 5px; }
+.order_money:after { display: inline-block; content: '\e906'; font-family: icon; font-size: 1.5rem; color: #636363; margin-left: 5px; }

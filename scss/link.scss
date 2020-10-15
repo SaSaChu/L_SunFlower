@@ -46,22 +46,53 @@ button {
   }
 }
 
-.list_boxs {
+.link_type01 {
   display: inline-block;
   width: 100%;
-  border-bottom: 1px solid $color_gray;
-  padding: 10px 15px;
   font-size: 1.1rem;
   color: $color_text;
-
-  &:last-child {
-    border-bottom: 0;
-  }
+  @include transition(all .3s);
 
   &:hover, &:active {
     color: $color_chief;
   }
 }
+
+.order_money {
+  color: $color_money;
+  font-size: 1.3rem;
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @include transition(all .3s);
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    color: $color_money;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-right: 5px;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '\e906';
+    font-family: icon;
+    font-size: 1.5rem;
+    color: $color_text2;
+    margin-left: 5px;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 

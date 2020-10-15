@@ -6,6 +6,8 @@ p { margin: 0; padding: 0; }
 
 .text_r { text-align: right; }
 
+.lH25 { line-height: 25px !important; }
+
 .text10_G { font-size: .8rem; color: #8a8a8a; }
 
 .icon_qu { display: inline-block; font-size: 1.3rem; margin-left: 10px; color: #f1bf4d; margin-top: -1px; }
@@ -13,16 +15,26 @@ p { margin: 0; padding: 0; }
 .text13_lG { font-size: 1rem; color: #eeeeee; }
 
 .text13_G { font-size: 1rem; color: #8a8a8a; }
+.text13_G:before { display: inline-block; content: attr(title); color: red; margin-right: 5px; }
 
 .text14_G { font-size: 1.1rem; color: #636363; }
 
 .text14_mG { font-size: 1rem; color: #636363; }
+
+.text14_dG { font-size: 1.1rem; color: #222222; }
+
+.text14_R { font-size: 1.1rem; color: red; }
+.text14_R:before { display: inline-block; content: attr(title); margin-right: 5px; }
+
+.qua14_dG { font-size: 1.1rem; color: #222222; margin-right: 10px; }
+.qua14_dG:before { display: inline-block; content: attr(title); margin-right: 5px; }
 
 .text16_w { font-size: 1.2rem; color: white; }
 
 .text16_mG { font-size: 1.2rem; color: #636363; }
 
 .text16_mG_title { font-size: 1.2rem; color: #636363; line-height: 32px; }
+.text16_mG_title.title_blue16 { color: #4497ff; }
 .text16_mG_title.no_lh32 { line-height: normal; }
 .text16_mG_title:before { display: inline-block; content: attr(title); }
 
