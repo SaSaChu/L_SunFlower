@@ -5,11 +5,42 @@ $color_money: rgba(255, 0, 0, 1.00); // 價格顯示・紅色 r
 $color_gray: rgba(238, 238, 238, 1.00); // 背景顏色・淺灰色 lG
 $color_text: rgba(34, 34, 34, 1.00); // 文字顯示・深灰色 dG
 $color_text2: rgba(99, 99, 99, 1.00); // 文字顯示・中灰色 mG
-$color_text3: rgba(138, 138, 138, 1.00);  // 文字顯示・灰色 G
+$color_text3: rgba(138, 138, 138, .9);  // 文字顯示・灰色 G
 
 p {
   margin: 0;
   padding: 0;
+}
+
+input {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  width: 100%;
+
+  &::placeholder {
+    color: rgba(138, 138, 138, .5);
+  }
+}
+
+.serch_input {
+  display: inline-block;
+  width: calc(100% - 10px);
+  font-size: 1.2rem;
+  line-height: 2.7rem;
+  color: $color_text2;
+  border: 1px solid $color_gray;
+  @include border-radius(3px);
+  margin-right: 10px;
+  padding: 0 5px;
+
+  &::placeholder {
+    color: rgba(138, 138, 138, .5);
+  }
+}
+
+.color_option {
+  color: rgba(138, 138, 138, .5) !important;
 }
 
 .text_cent {
@@ -47,10 +78,28 @@ p {
   font-size: 1rem;
   color: $color_text3;
 
+  &.b_G13 {
+    &:before {
+      color: $color_text3;
+    }
+  }
+
   &:before {
     display: inline-block;
     content: attr(title);
     color: $color_money;
+    margin-right: 5px;
+  }
+}
+.text13_G_date {
+  font-size: 1rem;
+  color: $color_text3;
+  line-height: 2.7rem;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    color: $color_text3;
     margin-right: 5px;
   }
 }

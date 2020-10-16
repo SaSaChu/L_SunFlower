@@ -32,7 +32,7 @@
 
     <div class='boxs pLR15'>
       <p class='text18_dG'>李大榮</p>
-      <p class='text13_G'>三花 VIP 會員卡</p>
+      <p class='text13_G no_before'>三花 VIP 會員卡</p>
       <p class='text16_mG_title pT10' title='會員編號：'>1234567890</p>
     </div>
 
@@ -42,10 +42,10 @@
           <a href="points.html" class='info_type text_cent' title='紅利點數'>1000</a>
         </div>
         <div class='info_boxs'>
-          <a href="" class='info_type text_cent' title='優惠票劵'>2</a>
+          <a href="cupon.html" class='info_type text_cent' title='優惠票劵'>2</a>
         </div>
         <div class='info_boxs'>
-          <a href="" class='info_type text_cent' title='待取商品'>1</a>
+          <a href="order.html" class='info_type text_cent' title='待取商品'>1</a>
         </div>
       </div>
     </div>
@@ -62,16 +62,38 @@
     </div>
 
     <div class='boxs pLR15 pT30'>
-      <p class='text13_G'>當月累積消費</p>
+      <p class='text13_G no_before'>當月累積消費</p>
       <p class='bold_text24_b pT10' title='NT$'>1000</p>
-      <p class='text13_G'>更新日期 2020-03-24</p>
+      <p class='text13_G no_before'>更新日期 2020-03-24</p>
     </div>
 
     <div class='boxs borderT3 mT10'>
       <div class='list_boxs'><a href="member.html" class='link_type01'>會員資料</a></div>
       <div class='list_boxs'><a href="" class='link_type01'>會員隱私權與權益說明</a></div>
-      <div class='list_boxs'><a href="" class='link_type01'>修改密碼</a></div>
+      <div class='list_boxs'><div class='link_type01' onclick="openModal();currentSlide(1)">修改密碼</div></div>
     </div>
+
+    <!-- 光箱・刪除帳號 -->
+    <div id="myModal" class="modal">
+      <div id='popWindow'>
+        <p>Delete Account?</p>
+        
+
+        <span class="link_gray order_right m_order_no" onclick="closeModal()">Delete</span>
+        <span class="link_deepBlue2 order_left" onclick="closeModal()">Cancel</span>  
+      </div>
+    </div>
+
+    <!-- lightbox -->
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+    </script>
 
   </body>
 </html>

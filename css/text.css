@@ -2,20 +2,32 @@
 
 p { margin: 0; padding: 0; }
 
+input { display: inline-block; outline: 0; border: 0; width: 100%; }
+input::placeholder { color: rgba(138, 138, 138, 0.5); }
+
+.serch_input { display: inline-block; width: calc(100% - 10px); font-size: 1.2rem; line-height: 2.7rem; color: #636363; border: 1px solid #eeeeee; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin-right: 10px; padding: 0 5px; }
+.serch_input::placeholder { color: rgba(138, 138, 138, 0.5); }
+
+.color_option { color: rgba(138, 138, 138, 0.5) !important; }
+
 .text_cent { text-align: center; }
 
 .text_r { text-align: right; }
 
 .lH25 { line-height: 25px !important; }
 
-.text10_G { font-size: .8rem; color: #8a8a8a; }
+.text10_G { font-size: .8rem; color: rgba(138, 138, 138, 0.9); }
 
 .icon_qu { display: inline-block; font-size: 1.3rem; margin-left: 10px; color: #f1bf4d; margin-top: -1px; }
 
 .text13_lG { font-size: 1rem; color: #eeeeee; }
 
-.text13_G { font-size: 1rem; color: #8a8a8a; }
+.text13_G { font-size: 1rem; color: rgba(138, 138, 138, 0.9); }
+.text13_G.b_G13:before { color: rgba(138, 138, 138, 0.9); }
 .text13_G:before { display: inline-block; content: attr(title); color: red; margin-right: 5px; }
+
+.text13_G_date { font-size: 1rem; color: rgba(138, 138, 138, 0.9); line-height: 2.7rem; }
+.text13_G_date:before { display: inline-block; content: attr(title); color: rgba(138, 138, 138, 0.9); margin-right: 5px; }
 
 .text14_G { font-size: 1.1rem; color: #636363; }
 
@@ -38,7 +50,7 @@ p { margin: 0; padding: 0; }
 .text16_mG_title.no_lh32 { line-height: normal; }
 .text16_mG_title:before { display: inline-block; content: attr(title); }
 
-.text16_lG_title { font-size: 1.2rem; color: #8a8a8a; line-height: 32px; }
+.text16_lG_title { font-size: 1.2rem; color: rgba(138, 138, 138, 0.9); line-height: 32px; }
 .text16_lG_title:before { display: inline-block; content: attr(title); }
 
 .text16_dG { font-size: 1.2rem; color: #222222; }

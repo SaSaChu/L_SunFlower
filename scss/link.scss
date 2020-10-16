@@ -18,10 +18,24 @@ button {
   display: inline-block;
   cursor: pointer;
   outline: 0;
+  border: 0;
 }
 
 .a100 {
   width: 100%;
+}
+
+.btn_blue {
+  display: inline-block;
+  padding: 8px 0;
+  color: white;
+  font-size: 1.1rem;
+  @include border-radius(4px);
+  background-color: $color_chief;
+
+  &.btn_gray {
+    background-color: $color_text3;
+  }
 }
 
 .info_type {
