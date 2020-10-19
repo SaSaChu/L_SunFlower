@@ -23,6 +23,16 @@ input {
   }
 }
 
+.pw_title {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  color: $color_chief;
+  text-align: center;
+  border-bottom: 1px solid $color_chief;
+}
+
 .serch_input {
   display: inline-block;
   width: calc(100% - 10px);
@@ -104,6 +114,11 @@ input {
   }
 }
 
+.text13_b {
+  font-size: 1rem;
+  color: $color_chief;
+}
+
 
 
 .text14_G {
@@ -155,6 +170,11 @@ input {
   color: $color_text2;
 }
 
+.text16_b {
+  font-size: 1.2rem;
+  color: $color_chief;
+}
+
 .text16_mG_title {
   font-size: 1.2rem;
   color: $color_text2;
@@ -189,6 +209,8 @@ input {
   font-size: 1.2rem;
   color: $color_text;
 }
+
+
 
 
 .text18_dG {

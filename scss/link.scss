@@ -100,8 +100,39 @@ button {
   }
 }
 
+.more_icon {
+  display: inline-block;
+  padding: 3px;
+  @include border-radius(2px);
+  border: 1px solid $color_gray;
+  background-color: white;
 
+  &:before {
+    display: inline-block;
+    content: '\e904';
+    font-family: icon;
+    font-size: 1.4rem;
+    color: $color_text3;
+    text-align: center;
+  }
+}
 
+.more_icon_u {
+  display: inline-block;
+  padding: 3px;
+  @include border-radius(2px);
+  border: 1px solid $color_gray;
+  background-color: white;
+
+  &:before {
+    display: inline-block;
+    content: '\e907';
+    font-family: icon;
+    font-size: 1.4rem;
+    color: $color_text3;
+    text-align: center;
+  }
+}
 
 
 

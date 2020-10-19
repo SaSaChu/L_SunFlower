@@ -5,6 +5,8 @@ p { margin: 0; padding: 0; }
 input { display: inline-block; outline: 0; border: 0; width: 100%; }
 input::placeholder { color: rgba(138, 138, 138, 0.5); }
 
+.pw_title { display: inline-block; width: 100%; padding: 10px 15px; font-size: 1.6rem; color: #4497ff; text-align: center; border-bottom: 1px solid #4497ff; }
+
 .serch_input { display: inline-block; width: calc(100% - 10px); font-size: 1.2rem; line-height: 2.7rem; color: #636363; border: 1px solid #eeeeee; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin-right: 10px; padding: 0 5px; }
 .serch_input::placeholder { color: rgba(138, 138, 138, 0.5); }
 
@@ -29,6 +31,8 @@ input::placeholder { color: rgba(138, 138, 138, 0.5); }
 .text13_G_date { font-size: 1rem; color: rgba(138, 138, 138, 0.9); line-height: 2.7rem; }
 .text13_G_date:before { display: inline-block; content: attr(title); color: rgba(138, 138, 138, 0.9); margin-right: 5px; }
 
+.text13_b { font-size: 1rem; color: #4497ff; }
+
 .text14_G { font-size: 1.1rem; color: #636363; }
 
 .text14_mG { font-size: 1rem; color: #636363; }
@@ -44,6 +48,8 @@ input::placeholder { color: rgba(138, 138, 138, 0.5); }
 .text16_w { font-size: 1.2rem; color: white; }
 
 .text16_mG { font-size: 1.2rem; color: #636363; }
+
+.text16_b { font-size: 1.2rem; color: #4497ff; }
 
 .text16_mG_title { font-size: 1.2rem; color: #636363; line-height: 32px; }
 .text16_mG_title.title_blue16 { color: #4497ff; }

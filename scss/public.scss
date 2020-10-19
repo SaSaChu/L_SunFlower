@@ -49,9 +49,28 @@ header {
   width: 100%;
 }
 
-.box30, .box70, .box25, .box75 {
+.box_ds40 {
+  display: inline-block;
+  width: 40%;
+}
+
+.box30, .box70, .box25, .box75, .box90, .box10 {
   display: inline-block;
   float: left;
+}
+
+.box10 {
+  width: 10%;
+
+  &.in_use {
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: $color_gray;
+  }
+}
+
+.box90 {
+  width: 90%;
 }
 
 .box30 {
@@ -93,7 +112,7 @@ header {
 
   .logo_box {
     position: absolute;
-    z-index: 9999;
+    // z-index: 7777;
     top: 0;
     left: 0;
     display: inline-block;
@@ -219,7 +238,25 @@ header {
       &.pal_nos {
         padding: 0;
       }
+
+      &.order_pal {
+        margin-top: 10px;
+        border-bottom: 0;
+        background-color: rgba(238, 238, 238, .5);
+        padding: 0;
+      }
     }
+  }
+}
+
+.order_pal_box {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid rgba(138, 138, 138, .3);
+
+  &.order_no_b {
+    border-bottom: 0;
   }
 }
 
@@ -229,6 +266,11 @@ header {
   background-color: rgba(238, 238, 238, .5);
   @include border-radius(3px);
   padding: 10px;
+
+  &.ce_box_w {
+    background-color: white;
+    margin-bottom: 3px;
+  }
 }
 
 .se_boxs {
@@ -280,31 +322,55 @@ header {
 
 // 光箱內容
 .modal {
-  display: none;
+   display: none;
   // display: inline-block;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
+  padding: 20% 20% 0 20%;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: auto;
   background-color: rgba(33, 33, 33, .8);
 
-  #popWindow {
+  @include range-width(0, 450px) {
+    padding: 20% 10% 0 10%;
+  }
+
+
+  .modal_boxs {
     display: inline-block;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 800px;
     background-color: white;
     @include border-radius(4px);
-    padding: 20px 30px;
     @include clearfix();
   }
 }
 
+.pw_boxs {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid $color_gray;
+}
 
+.more_box {
+  display: none;
 
+  .open {
+    display: inline-block;
+    width: 100%;
+    @include transition(all .5s);
 
+    @for $i from 1 through 4 {
+      &.na#{$i} {  //#{$i} 變數，前面的n是css的名字(n1,n2...)
+        height: 45px * $i; //$i變數。
+      }
+    }
+  }
+}
 
 
 

@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class='boxs pLR15 pT30'>
+    <div class='boxs pLR15 pT20'>
       <p class='text13_G no_before'>當月累積消費</p>
       <p class='bold_text24_b pT10' title='NT$'>1000</p>
       <p class='text13_G no_before'>更新日期 2020-03-24</p>
@@ -75,12 +75,29 @@
 
     <!-- 光箱・刪除帳號 -->
     <div id="myModal" class="modal">
-      <div id='popWindow'>
-        <p>Delete Account?</p>
-        
+      <div class='modal_boxs'>
+        <p class='pw_title'>修改密碼</p>
 
-        <span class="link_gray order_right m_order_no" onclick="closeModal()">Delete</span>
-        <span class="link_deepBlue2 order_left" onclick="closeModal()">Cancel</span>  
+        <div class='pw_boxs'>
+          <p class='text13_G' title='*'>請輸入原本密碼</p>
+          <input class='box90 text14_G pT10' value="*******"></input>
+          <button class='box10 in_use icon-visibility_off'></button>
+        </div>
+        <div class='pw_boxs'>
+          <p class='text13_G' title='*'>請輸入新的密碼</p>
+          <input class='box90 text14_G pT10' value="*******"></input>
+          <button class='box10 in_use icon-visibility_off'></button>
+        </div>
+        <div class='pw_boxs'>
+          <p class='text13_G' title='*'>再次輸入新的密碼</p>
+          <input class='box90 text14_G pT10' value="*******"></input>
+          <button class='box10 in_use icon-remove_red_eye'></button>
+        </div>
+        
+        <div class='boxs p15'>
+          <span class="btn_blue btn_gray box_ds40 text_cent order_left" onclick="closeModal()">取 消</span>
+          <span class="btn_blue box_ds40 text_cent order_right" onclick="closeModal()">確 認</span>
+        </div>
       </div>
     </div>
 
