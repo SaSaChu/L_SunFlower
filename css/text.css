@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 p { margin: 0; padding: 0; }
@@ -41,6 +42,10 @@ input::placeholder { color: rgba(138, 138, 138, 0.5); }
 
 .text14_R { font-size: 1.1rem; color: red; }
 .text14_R:before { display: inline-block; content: attr(title); margin-right: 5px; }
+
+.text14_b { font-size: 1.1rem; color: #4497ff; line-height: 1.3rem; }
+.text14_b:before { display: inline-block; content: '獲得點數'; margin-right: 5px; font-size: .8rem; color: rgba(138, 138, 138, 0.9); }
+.text14_b:after { display: inline-block; content: '點'; margin-left: 5px; font-size: 1.1rem; color: #636363; }
 
 .qua14_dG { font-size: 1.1rem; color: #222222; margin-right: 10px; }
 .qua14_dG:before { display: inline-block; content: attr(title); margin-right: 5px; }

@@ -147,6 +147,28 @@ input {
   }
 }
 
+.text14_b {
+  font-size: 1.1rem;
+  color: $color_chief;
+  line-height: 1.3rem;
+
+  &:before {
+    display: inline-block;
+    content: '獲得點數';
+    margin-right: 5px;
+    font-size: .8rem;
+    color: $color_text3;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '點';
+    margin-left: 5px;
+    font-size: 1.1rem;
+    color: $color_text2;
+  }
+}
+
 .qua14_dG {
   font-size: 1.1rem;
   color: $color_text;

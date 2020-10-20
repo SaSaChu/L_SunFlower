@@ -46,9 +46,21 @@
       <div class='partnersbox partnersboxshow'>
         <div class='pal order_pal'>
           <div class='order_pal_box'>
-            <div class='box90'>dd</div>
-            <div class='box10'><div class='more_icon'></div></div>
+            <div class='box90'>
+              <div class='box50'>
+                <div class='text10_G'>訂單編號</div>
+                <div class='text16_mG lH25'>11L20032400124</div>
+                <p class='text14_R box_ds pT15' title='NT$'>500</p>
+              </div>
+              <div class='box50'>
+                <div class='text10_G'>訂單日期</div>
+                <div class='text16_mG lH25'>2020/07/10</div>
+                <p class='text14_b box_ds pT15'>200</p>
+              </div>
+            </div>
+            <div class='box10 box-close'><button class='toggle'></button></div>
           </div>
+
           <div class='order_pal_box'>
             <div class='box30 text16_mG'>配送進度</div>
             <div class='box70 text16_b lH25 text_r'>配送中</div>
@@ -70,7 +82,7 @@
               </div>
             </div>
 
-            <div class='more_box'>
+            <div class='more_box box-close' style="height: 10px;">
               <div class='ce_box ce_box_w'>
                 <div class='box30'><img src="img/p01.png"></div>
                 <div class='box70 pL20'>
@@ -226,6 +238,20 @@
         </div>
       </div>
     </div>
+
+    <script>
+    var toggleNode = document.querySelector('.toggle');
+
+    toggleNode.addEventListener("click", toggleFunc);
+
+
+    function toggleFunc(E) {
+        E.preventDefault();
+        box = document.querySelector('.more_box');
+        var orgHeight = parseInt(box.style.height, 10);
+        box.style.height = (orgHeight > 100) ? "3px": box.scrollHeight + "px"; 
+    }
+    </script>
 
   </body>
 </html>

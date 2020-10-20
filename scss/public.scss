@@ -54,7 +54,7 @@ header {
   width: 40%;
 }
 
-.box30, .box70, .box25, .box75, .box90, .box10 {
+.box30, .box70, .box25, .box75, .box90, .box10, .box50 {
   display: inline-block;
   float: left;
 }
@@ -67,6 +67,10 @@ header {
     font-size: 1.6rem;
     color: $color_gray;
   }
+}
+
+.box50 {
+  width: 50%;
 }
 
 .box90 {
@@ -357,20 +361,13 @@ header {
 }
 
 .more_box {
-  display: none;
-
-  .open {
-    display: inline-block;
-    width: 100%;
-    @include transition(all .5s);
-
-    @for $i from 1 through 4 {
-      &.na#{$i} {  //#{$i} 變數，前面的n是css的名字(n1,n2...)
-        height: 45px * $i; //$i變數。
-      }
-    }
-  }
+  display: block;
+  width: 100%;
+  height: 60px;
+  transition: height 0.35s ease;
+  overflow: hidden;
 }
+
 
 
 
