@@ -21,7 +21,7 @@
   <body>
     
     <header>
-      <div class='text18_w l_height45 order_left icon-menu' style='color:transparent;'></div>
+      <a href="index_v2.html" class='text18_w l_height45 order_left icon-home'></a>
       <p class='title_boxs text16_w l_height45 text_cent'>優惠票劵</p>
     </header>
 
@@ -230,7 +230,7 @@
                 <div class='box75'>
                   <p class='text13_G_date' title="有效日期：">2020-01-01 ~ 2020-03-31</p>
                 </div>
-                <div class='box25'><a href='' class="btn_blue box_ds100 text_cent">領取票卷</a></div>
+                <div class='box25'><div href='' class="btn_blue box_ds100 text_cent" onclick="openModal();currentSlide(1)">領取票卷</div></div>
               </div>
             </div>
           </div> 
@@ -248,13 +248,39 @@
                 <div class='box75'>
                   <p class='text13_G_date' title="有效日期：">2020-01-01 ~ 2020-03-31</p>
                 </div>
-                <div class='box25'><a href='' class="btn_blue box_ds100 text_cent">領取票卷</a></div>
+                <div class='box25'><div class="btn_blue box_ds100 text_cent" onclick="openModal();currentSlide(1)">領取票卷</div></div>
               </div>
             </div>
           </div> 
         </div>
       </div>
     </div>
+
+    <!-- 光箱・刪除帳號 -->
+    <div id="myModal" class="modal">
+      <div class='modal_boxs'>
+        <p class='pw_title'>票卷已領取</p>
+
+        <div class='boxs p15'>
+          <p class='text18_dG'>優惠票劵已領取，請至未使用票卷頁面使用票卷。</p>
+        </div>
+        
+        <div class='boxs p15'>
+          <span class="btn_blue box_ds100 text_cent" onclick="closeModal()">確 認</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- lightbox -->
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+    </script>
 
   </body>
 </html>
